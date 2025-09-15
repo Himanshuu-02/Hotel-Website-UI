@@ -2,6 +2,7 @@ import React from "react";
 import LowerHeader from "./LowerHeader";
 import LanguageIcon from '@mui/icons-material/Language';
 import MenuIcon from '@mui/icons-material/Menu';
+import DarkMode from "./DarkMode";
 
 const Header = () => {
   return (
@@ -53,17 +54,21 @@ const Header = () => {
           <span>
             <h1 className="font-bold hover:underline">Service</h1>
           </span>
+          
         </div>
        {/* { last Portion} */}
-       <div className="flex gap-5 mx-7">
+       <div className="flex gap-6 mx-7 items-center">
+        
         <h1 className="font-bold text-lg">Become a host</h1>
-        <span className="cursor-pointer  rounded-full bg-gray-200 hover:scale-90">
+        <span className="cursor-pointer px-2 py-1 rounded-full bg-base-100 hover:scale-90">
             <LanguageIcon />
         </span>
-        <span className="cursor-pointer px-2  rounded-full bg-gray-200 hover:scale-90">
+        <span className="cursor-pointer px-2 py-1  rounded-full bg-base-100 hover:scale-90">
             <MenuIcon/>
         </span>
-        
+        <span className="mx-3 w-1">
+          <DarkMode/>
+        </span>
        </div>
       </div>
       <LowerHeader />

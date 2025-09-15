@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './AirBnB web/Header'
 import PhotoContainer from './AirBnB web/PhotoContainer'
+import Footer from './AirBnB web/Footer'
 
 function App() {
  
@@ -16,6 +17,9 @@ function App() {
       <PhotoContainer/>
       <PhotoContainer/>
       <PhotoContainer/>
+      <PhotoContainer/>
+      <PhotoContainer/>
+      <Footer/>
     </>
   )
 }

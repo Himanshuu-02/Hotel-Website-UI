@@ -68,13 +68,13 @@ const LowerHeader = () => {
     <div
       className={`transition-all duration-300 ease-in-out ${
         isSticky
-          ? "fixed top-0 left-0 w-full z-50 bg-white shadow-md py-2"
+          ? "fixed top-0 left-0 w-full z-50 bg-base-300 shadow-md py-2"
           : "relative mt-5 py-5"
       }`}
     >
       <div
-        className={`mx-auto flex items-center rounded-full shadow-md bg-white overflow-hidden transition-all duration-300 ${
-          isSticky ? "scale-90 w-[54%]" : "scale-100 w-3/4 "
+        className={`mx-auto flex items-center rounded-full shadow-md bg-base-100 text-base-content overflow-hidden transition-all duration-300 ${
+          isSticky ? "scale-90 w-[54%]" : "scale-100 w-[70%] "
         }`}
       >
         {/* logo */}
@@ -86,25 +86,25 @@ const LowerHeader = () => {
           />
         </a>)}
         {/* Where */}
-        <div className={`flex-1 px-6 py-3  cursor-pointer border-r border-gray-200 ${isSticky? "hover:scale-110 hover:underline":"hover:bg-gray-100 hover:rounded-full"}`}>
-          <h1 className={`  ${isSticky? "text-xl font-bold":"text-sm font-semibold"}`}>Where</h1>
+        <div className={`flex-1 px-6 py-3  cursor-pointer border-r border-gray-200 ${isSticky? "hover:scale-110 hover:underline":"hover:bg-gray-100 hover:text-black hover:rounded-full"}`}>
+          <h1 className={`  ${isSticky? "text-xl font-bold":"text-lg font-semibold"}`}>Where</h1>
           <p className={`text-gray-500 text-sm ${isSticky? "hidden ":"block"}`}>Search destinations</p>
         </div>
 
         {/* Check in */}
-        <div className={`flex-1 px-6 py-3  cursor-pointer border-r border-gray-200 ${isSticky? "hover:scale-110 hover:underline":"hover:bg-gray-100 hover:rounded-full"}`}>
-          <h1 className={`  ${isSticky? "text-xl font-bold":"text-sm font-semibold"}`}>Check in</h1>
+        <div className={`flex-1 px-6 py-3  cursor-pointer border-r border-gray-200 ${isSticky? "hover:scale-110 hover:underline":"hover:bg-gray-100 hover:text-black hover:rounded-full"}`}>
+          <h1 className={`  ${isSticky? "text-xl font-bold":"text-lg font-semibold"}`}>Check in</h1>
           <p className={`text-gray-500 text-sm ${isSticky? "hidden ":"block"}`}>Add dates</p>
         </div>
 
         {/* Check out */}
-        <div className={`flex-1 px-6 py-3  cursor-pointer border-r border-gray-200 ${isSticky? "hover:scale-110 hover:underline":"hover:bg-gray-100 hover:rounded-full"}`}>
-          <h1 className={`  ${isSticky? "text-xl font-bold":"text-sm font-semibold"}`}>Check out</h1>
+        <div className={`flex-1 px-6 py-3  cursor-pointer border-r border-gray-200 ${isSticky? "hover:scale-110 hover:underline":"hover:bg-gray-100 hover:text-black hover:rounded-full"}`}>
+          <h1 className={`  ${isSticky? "text-xl font-bold":"text-lg font-semibold"}`}>Check out</h1>
           <p className={`text-gray-500 text-sm ${isSticky? "hidden ":"block"}`}>Add dates</p>
         </div>
 
         {/* Who + Search */}
-        <div className={`flex-1 flex items-center justify-between hover:rounded-full  py-3 hover:bg-gray-100 cursor-pointer ${isSticky? "px-7 ":"px-6"}`}>
+        <div className={`flex-1 flex items-center justify-between hover:rounded-full  py-3 hover:bg-gray-100 hover:text-black cursor-pointer ${isSticky? "px-7 ":"px-6"}`}>
           <div className={`${isSticky? "hidden":"block"}`}>
             <h1 className="text-sm font-semibold">Who</h1>
             <p className="text-gray-500 text-sm">Add guests</p>
