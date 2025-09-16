@@ -59,7 +59,8 @@ const Header = () => {
               </div>
             </span>
             <span>
-              <h1 className="font-bold hover:underline">Service</h1>
+              <Link to={"/services"}><h1 className="font-bold hover:underline">Service</h1></Link>
+              
             </span>
           </div>
           {/* { last Portion} */}

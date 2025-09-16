@@ -10,6 +10,7 @@ import SInglePhoto from "./AirBnB web/SInglePhoto";
 import Body from "./AirBnB web/Body";
 import Photoslist from "./AirBnB web/Photoslist";
 import Form from "./AirBnB web/Form";
+import Servies from "./AirBnB web/Servies";
 function App() {
   return (
     <BrowserRouter basename="/">
@@ -19,6 +20,7 @@ function App() {
 
           <Route path="/another" element={<SInglePhoto />} />
           <Route path="/login" element={<Form/>} />
+          <Route path="/services" element={<Servies/>} />
         </Route>
       </Routes>
 
