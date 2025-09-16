@@ -213,17 +213,17 @@ const listings = [
   },
 ];
 
-const PhotoContainer = () => {
+const PhotoContainer = ({name}) => {
   return (
     <div className="mt-5 px-6">
       <h1 className="font-bold text-2xl mb-4">
-        Popular homes in Sahibzada Ajit Singh Nagar
+       {name}
       </h1>
 
       {/* Cards Grid */}
       <div className="flex gap-6 overflow-x-scroll [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden px-4">
         {/* First Card (static example) */}
-        <div className="relative w-65 flex-shrink-0  hover:scale-110 hover:duration-100">
+        <div className="relative w-65 flex-shrink-0  hover:scale-110 hover:transition duration-500">
           <Link to={"/another"}>
             {" "}
             <img
@@ -255,7 +255,7 @@ const PhotoContainer = () => {
         {listings.map((item, idx) => (
           <div
             key={idx}
-            className="relative w-65 flex-shrink-0  hover:scale-90 hover:duration-100"
+            className="relative w-65 flex-shrink-0  hover:scale-90 hover:transition duration-500"
           >
             <Link to={"/another"}>
               <img

@@ -43,7 +43,8 @@ const Header = () => {
               </div>
             </span>
             <span>
-              <h1 className="font-bold hover:underline">Experience</h1>
+              <Link to={"/experience"} className="transition duration-1000"><h1 className="font-bold hover:underline">Experience</h1></Link>
+              
             </span>
 
             <span>

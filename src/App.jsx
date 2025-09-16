@@ -11,6 +11,8 @@ import Body from "./AirBnB web/Body";
 import Photoslist from "./AirBnB web/Photoslist";
 import Form from "./AirBnB web/Form";
 import Servies from "./AirBnB web/Servies";
+import Experience from "./AirBnB web/Experience";
+import ExperienceContainer from "./AirBnB web/ExperienceContainer";
 function App() {
   return (
     <BrowserRouter basename="/">
@@ -21,6 +23,7 @@ function App() {
           <Route path="/another" element={<SInglePhoto />} />
           <Route path="/login" element={<Form/>} />
           <Route path="/services" element={<Servies/>} />
+          <Route path="/experience" element={<ExperienceContainer/>} />
         </Route>
       </Routes>
 
